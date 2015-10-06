@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+  <div class="panel-heading">query params</div>
+  <div class="panel-body">
+    <dl>
+      {{#each queryParams as |param|}}
+        <dt>{{param.key}}</dt>
+        <dd>{{param.value}}</dd>
+      {{/each}}
+    </dl>
+  </div>
+</div>
+
+<dl>
+  <dt>protocol</dt>
+  <dd>{{protocol}}</dd>
+
+  <dt>host</dt>
+  <dd>{{host}}</dd>
+
+  <dt>hostname</dt>
+  <dd>{{hostname}}</dd>
+
+  <dt>port</dt>
+  <dd>{{port}}</dd>
+
+  <dt>pathname</dt>
+  <dd>{{pathname}}</dd>
+
+  <dt>search</dt>
+  <dd>{{search}}</dd>
+
+  <dt>hash</dt>
+  <dd>{{hash}}</dd>
+
+  <dt>route</dt>
+  <dd>{{route}}</dd>
+</dl>

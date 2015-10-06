@@ -4,8 +4,10 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-url-parser',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://ember-url-parser.firebaseio.com/',
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
