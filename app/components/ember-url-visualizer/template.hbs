@@ -1,37 +1,81 @@
-<div class="panel panel-default">
-  <div class="panel-heading">query params</div>
-  <div class="panel-body">
-    <dl>
-      {{#each queryParams as |param|}}
-        <dt>{{param.key}}</dt>
-        <dd>{{param.value}}</dd>
-      {{/each}}
-    </dl>
+<div class="row">
+  <div class="col-xs-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">protocol</h4>
+      </div>
+      <div class="panel-body">
+        {{protocol}}//
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">hostname</h4>
+      </div>
+      <div class="panel-body">
+        {{hostname}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-1">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">port</h4>
+      </div>
+      <div class="panel-body">
+        :{{port}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-1">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">path</h4>
+      </div>
+      <div class="panel-body">
+        {{pathname}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">hash</h4>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">route</h4>
+              </div>
+              <div class="panel-body">
+                {{route}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">query params</div>
+              <div class="panel-body">
+                <dl>
+                  {{#each queryParams as |param|}}
+                  <dt>{{param.key}}</dt>
+                  <dd>{{param.value}}</dd>
+                  {{/each}}
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-<dl>
-  <dt>protocol</dt>
-  <dd>{{protocol}}</dd>
-
-  <dt>host</dt>
-  <dd>{{host}}</dd>
-
-  <dt>hostname</dt>
-  <dd>{{hostname}}</dd>
-
-  <dt>port</dt>
-  <dd>{{port}}</dd>
-
-  <dt>pathname</dt>
-  <dd>{{pathname}}</dd>
-
-  <dt>search</dt>
-  <dd>{{search}}</dd>
-
-  <dt>hash</dt>
-  <dd>{{hash}}</dd>
-
-  <dt>route</dt>
-  <dd>{{route}}</dd>
-</dl>

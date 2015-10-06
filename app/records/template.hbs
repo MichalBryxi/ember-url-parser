@@ -1,15 +1,1 @@
-<section>
-  {{#each model as |record|}}
-    <div>
-      {{#link-to 'records.record' record.id}}
-        {{record.url}}
-      {{/link-to}}
-    </div>
-  {{/each}}
-</section>
-
-<button class="btn btn-primary" {{action 'addRecord'}}>Add</button>
-
-<hr />
-
-{{outlet}}
+    {{outlet}}

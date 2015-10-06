@@ -1,5 +1,22 @@
-{{input value=model.url}}
-{{model.url}}
+<div class="row">
+  <div class="col-xs-12">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="url">URL</label>
+        {{input class="form-control" id="url" placeholder="http://..." value=model.url}}
+      </div>
+      <a class="btn btn-link" {{action "addRecord"}}>
+        {{fa-icon "plus-square"}}
+        New
+      </a>
+    </form>
+  </div>
+</div>
+
 <hr />
 
-{{ember-url-visualizer url=model.url}}
+<div class="row">
+  <div class="col-xs-12">
+    {{ember-url-visualizer url=model.url}}
+  </div>
+</div>

@@ -4,7 +4,9 @@ export default Ember.Controller.extend({
   actions: {
     addRecord: function () {
       var record = this.store.createRecord('record', {url: 'http://localhost:4200/#/posts/11/edit?hideName=true&selected=body'});
-      record.save();
+      record.save().then((record) => {
+        this.transitionToRoute('records.record', record.id);
+      });
     }
   }
 });
