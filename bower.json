@@ -15,5 +15,8 @@
     "firebase": "^2.1.0",
     "bootstrap-sass": "~3.3.5",
     "font-awesome": "~4.4.0"
+  },
+  "devDependencies": {
+    "jsdiff": "~2.1.3"
   }
 }

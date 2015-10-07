@@ -6,9 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('records', {path: '/records'}, function () {
-    this.route('record', {path: '/:id'});
-  });
+  this.route('url', {path: '/url/:id'});
+  this.route('urls', {path: '/urls'});
+
+  this.route('compare', {path: '/compare'});
   this.route('about', {});
 });
 

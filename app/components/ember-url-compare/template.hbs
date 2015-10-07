@@ -1,0 +1,16 @@
+<div class="inline-diff">
+  <div class="inline-diff-body">
+    {{x-diff a=url1 b=url2}}
+  </div>
+</div>
+
+<ul class="list-group">
+  {{ember-url-compare/row a=parser1.protocol b=parser2.protocol}}
+  {{ember-url-compare/row a=parser1.hostname b=parser2.hostname}}
+  {{ember-url-compare/row a=parser1.port b=parser2.port}}
+  {{ember-url-compare/row a=parser1.pathname b=parser2.pathname}}
+  {{ember-url-compare/row a=routes.[0] b=routes.[1]}}
+  {{ember-url-compare/row a="?" b="?"}}
+  {{ember-url-compare/row a=queryParams.[0] b=queryParams.[1] method="diffLines"}}
+  {{!ember-url-compare/row a=queryParams.[0] b=queryParams.[1] method="diffJson"}}
+</ul>

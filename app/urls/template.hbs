@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |url|}}
+    <li>
+      {{#link-to 'url' url.id}}
+        {{url.value}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
