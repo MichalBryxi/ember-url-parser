@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('records', {path: '/records'}, function () {
     this.route('record', {path: '/:id'});
   });
+  this.route('about', {});
 });
 
 export default Router;

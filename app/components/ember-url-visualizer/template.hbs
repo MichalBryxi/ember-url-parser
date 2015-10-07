@@ -1,8 +1,10 @@
 <div class="row">
-  <div class="col-xs-2">
+  <div class="col-xs-1">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">protocol</h4>
+        <a href="https://en.wikipedia.org/wiki/Communications_protocol">
+          proto
+        </a>
       </div>
       <div class="panel-body">
         {{protocol}}//
@@ -13,7 +15,9 @@
   <div class="col-xs-2">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">hostname</h4>
+        <a href="https://en.wikipedia.org/wiki/Hostname">
+          host
+        </a>
       </div>
       <div class="panel-body">
         {{hostname}}
@@ -24,7 +28,9 @@
   <div class="col-xs-1">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">port</h4>
+        <a href="https://en.wikipedia.org/wiki/Port_(computer_networking)">
+          port
+        </a>
       </div>
       <div class="panel-body">
         :{{port}}
@@ -35,7 +41,9 @@
   <div class="col-xs-1">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">path</h4>
+        <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">
+          path
+        </a>
       </div>
       <div class="panel-body">
         {{pathname}}
@@ -43,17 +51,21 @@
     </div>
   </div>
 
-  <div class="col-xs-6">
+  <div class="col-xs-7">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">hash</h4>
+        <a href="https://en.wikipedia.org/wiki/Fragment_identifier">
+          hash
+        </a>
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-xs-6">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h4 class="panel-title">route</h4>
+                <a href="http://guides.emberjs.com/v1.10.0/routing/defining-your-routes/">
+                  route
+                </a>
               </div>
               <div class="panel-body">
                 {{route}}
@@ -63,12 +75,19 @@
 
           <div class="col-xs-6">
             <div class="panel panel-default">
-              <div class="panel-heading">query params</div>
+              <div class="panel-heading">
+                <a href="http://guides.emberjs.com/v1.10.0/routing/query-params/">
+                  query params
+                </a>
+              </div>
               <div class="panel-body">
-                <dl>
+                <div class="question-mark">
+                  ?
+                </div>
+                <dl class="dl-horizontal">
                   {{#each queryParams as |param|}}
-                  <dt>{{param.key}}</dt>
-                  <dd>{{param.value}}</dd>
+                  <dt>{{param.key}} =</dt>
+                  <dd>{{param.value}} &amp;</dd>
                   {{/each}}
                 </dl>
               </div>
