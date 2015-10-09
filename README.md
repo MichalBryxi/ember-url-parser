@@ -1,9 +1,30 @@
-# Ember-url-parser
+# Ember.js URL parser
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+[Web application](https://ember-url-parser.firebaseapp.com) to visualize Ember.js URLs.
 
-## Prerequisites
+## What is this good for?
+
+All started when I had URL like:
+
+```
+http://localhost:4200/#/post/1/edit?contain=foo%3A%3Abar&status=failure&id=90a2685760bb937cf2dfa58f9648f01d8bfbe&title=baz%5B57%5D&type=foobar&duration=86400&end=1444405848&order_by=%5B%7B%22field%22%3A%22failure%22%2C%22order%22%3A%22asc%22%7D%5D&start=1444319448&summary=meow
+```
+
+And I needed to compare it to another insanely long URL. There are some URL visualizers around the net, but none supports Ember.js `locationType: 'hash'` for providing information about routes and query params. Long story short: This tool aspires to give you simple way easily extracting any data you need from Ember.js compatible URLs. Although this tool is not directly meant for parsing generic URLs, it might also help you with these.
+
+## Features
+
+### Visualize
+
+![Ember.js URL visualization](/public/doc/visualize.png?raw=true "Ember.js URL visualization")
+
+### Compare
+
+![Compare two Ember.js URLs](/public/doc/compare.png?raw=true "Compare two Ember.js URLs")
+
+## Running the application yourself
+
+### Prerequisites
 
 You will need the following things properly installed on your computer.
 
@@ -13,41 +34,27 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Installation
+### Installation
 
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
 
-## Running / Development
+### Running / Development
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
+### Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
