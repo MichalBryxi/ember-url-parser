@@ -1,6 +1,16 @@
+<h3>Diff:</h3>
 <div class="inline-diff">
   <div class="inline-diff-body">
     {{x-diff a=url1 b=url2}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h3>Removed:</h3>
+  </div>
+  <div class="col-xs-6">
+    <h3>Added:</h3>
   </div>
 </div>
 
@@ -12,5 +22,4 @@
   {{ember-url-compare/row a=routes.[0] b=routes.[1]}}
   {{ember-url-compare/row a="?" b="?"}}
   {{ember-url-compare/row a=queryParams.[0] b=queryParams.[1] method="diffLines"}}
-  {{!ember-url-compare/row a=queryParams.[0] b=queryParams.[1] method="diffJson"}}
 </ul>
