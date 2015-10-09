@@ -1,7 +1,9 @@
+<div class="alert alert-danger" role="alert">{{fa-icon "spinner" pulse=true}} Work in progress...</div>
+
 <ul>
   {{#each model as |url|}}
     <li>
-      {{#link-to 'url' url.id}}
+      {{#link-to 'url.show' url.id}}
         {{url.value}}
       {{/link-to}}
     </li>
