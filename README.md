@@ -28,6 +28,12 @@ On the bottom you can see table which shows first URL on the left and highlights
 
 ![Compare two Ember.js URLs](/public/doc/compare.png?raw=true "Compare two Ember.js URLs")
 
+## Disclaimer
+
+Currently this is more of a proof - of - concept hacky implementation, which holds together with roll of ducttape and a good will. There are absolutely no (useful) tests. It it most likely that on any unusual input the application will just blow into your face. And that's fine. Raise an issue, create a feature proposal ticket, submit a pull request. I'm happy to move this thing forward. It is currently doing everything I need it to do.
+
+I created this app partly as a demonstration of Ember.js v1.13.8 application for [this guy](https://plus.google.com/118250312679392585749/about). Give him a high five, if you are reading this 😘
+
 ## Running the application yourself
 
 ### Prerequisites
