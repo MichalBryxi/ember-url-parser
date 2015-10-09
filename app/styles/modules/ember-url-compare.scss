@@ -1,0 +1,34 @@
+$inline-diff-added-color: #393;
+$inline-diff-deleted-color: #933;
+$inline-diff-neutral-color: #333;
+$inline-diff-lighten: 50%;
+
+.inline-diff {
+  @extend .panel;
+  @extend .panel-default;
+
+  &-body {
+    @extend .panel-body;
+    font-weight: 600;
+  }
+
+  &-added {
+    color: $inline-diff-added-color;
+    background-color: lighten($inline-diff-added-color, $inline-diff-lighten);
+  }
+
+  &-deleted {
+    color: $inline-diff-deleted-color;
+    background-color: lighten($inline-diff-deleted-color, $inline-diff-lighten);
+  }
+
+  &-neutral {
+    color: $inline-diff-neutral-color;
+  }
+}
+
+.row-is-same {
+  @extend .disabled;
+}
+.row-is-different {
+}

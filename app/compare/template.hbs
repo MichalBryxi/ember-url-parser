@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-6">
+    <form class="form-horizontal">
+      <div class="input-group">
+        <span class="input-group-addon">URL #1:</span>
+        {{input class="form-control" id="url1" placeholder="http://..." value=url1}}
+      </div>
+    </form>
+  </div>
+  <div class="col-xs-6">
+    <form class="form-horizontal">
+      <div class="input-group">
+        <span class="input-group-addon">URL #2:</span>
+        {{input class="form-control" id="url2" placeholder="http://..." value=url2}}
+      </div>
+    </form>
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="col-xs-12">
+    {{ember-url-compare url1=url1 url2=url2}}
+  </div>
+</div>
